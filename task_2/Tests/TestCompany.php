@@ -30,7 +30,10 @@ class TestCompany
         return $testResults;
     }
 
-    public function testSortCountOfEmployees()
+    /**
+     * @return array
+     */
+    public function testSortCountOfEmployees(): array
     {
         $testData = $this->dataForTests()[2];
         $company = new Company($testData['companyName']);
@@ -46,7 +49,11 @@ class TestCompany
         ];
     }
 
-    public function testGetOfficesSortedBySalary()
+
+    /**
+     * @return array
+     */
+    public function testGetOfficesSortedBySalary(): array
     {
         $testData = $this->dataForTests()[3];
         $company = new Company($testData['companyName']);
@@ -67,6 +74,9 @@ class TestCompany
         ];
     }
 
+    /**
+     * @return array
+     */
     private function dataForTests(): array
     {
         return [
