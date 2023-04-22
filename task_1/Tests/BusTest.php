@@ -12,6 +12,9 @@ class BusTest
         return assert($bus->getSpeed() === 80);
     }
 
+    /**
+     * @return bool|void
+     */
     public function testToString()
     {
         $bus = new Bus();

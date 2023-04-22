@@ -12,6 +12,9 @@ class CarTest
         return assert($car->getSpeed() === 100);
     }
 
+    /**
+     * @return bool|void
+     */
     public function testToString()
     {
         $car = new Car();
